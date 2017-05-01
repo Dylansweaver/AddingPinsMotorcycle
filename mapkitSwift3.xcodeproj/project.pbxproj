@@ -14,6 +14,9 @@
 		00F38D271EB6CC5000BFD38D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F38D251EB6CC5000BFD38D /* LaunchScreen.storyboard */; };
 		00F38D321EB6CC5000BFD38D /* mapkitSwift3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F38D311EB6CC5000BFD38D /* mapkitSwift3Tests.swift */; };
 		00F38D3D1EB6CC5000BFD38D /* mapkitSwift3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F38D3C1EB6CC5000BFD38D /* mapkitSwift3UITests.swift */; };
+		00F38D4C1EB6E22000BFD38D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F38D4B1EB6E22000BFD38D /* MapKit.framework */; };
+		00F38D741EB6FEEC00BFD38D /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F38D731EB6FEEC00BFD38D /* MapPin.swift */; };
+		00F38D761EB7189400BFD38D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F38D751EB7189400BFD38D /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		00F38D6C1EB6F66A00BFD38D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00F38D191EB6CC5000BFD38D /* mapkitSwift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapkitSwift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F38D1C1EB6CC5000BFD38D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +63,9 @@
 		00F38D381EB6CC5000BFD38D /* mapkitSwift3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapkitSwift3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F38D3C1EB6CC5000BFD38D /* mapkitSwift3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapkitSwift3UITests.swift; sourceTree = "<group>"; };
 		00F38D3E1EB6CC5000BFD38D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F38D4B1EB6E22000BFD38D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		00F38D731EB6FEEC00BFD38D /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		00F38D751EB7189400BFD38D /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F38D4C1EB6E22000BFD38D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +101,7 @@
 				00F38D301EB6CC5000BFD38D /* mapkitSwift3Tests */,
 				00F38D3B1EB6CC5000BFD38D /* mapkitSwift3UITests */,
 				00F38D1A1EB6CC5000BFD38D /* Products */,
+				00F38D4A1EB6E22000BFD38D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +118,11 @@
 		00F38D1B1EB6CC5000BFD38D /* mapkitSwift3 */ = {
 			isa = PBXGroup;
 			children = (
+				00F38D731EB6FEEC00BFD38D /* MapPin.swift */,
 				00F38D1C1EB6CC5000BFD38D /* AppDelegate.swift */,
 				00F38D1E1EB6CC5000BFD38D /* ViewController.swift */,
 				00F38D201EB6CC5000BFD38D /* Main.storyboard */,
+				00F38D751EB7189400BFD38D /* DetailsViewController.swift */,
 				00F38D231EB6CC5000BFD38D /* Assets.xcassets */,
 				00F38D251EB6CC5000BFD38D /* LaunchScreen.storyboard */,
 				00F38D281EB6CC5000BFD38D /* Info.plist */,
@@ -125,6 +148,14 @@
 			path = mapkitSwift3UITests;
 			sourceTree = "<group>";
 		};
+		00F38D4A1EB6E22000BFD38D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00F38D4B1EB6E22000BFD38D /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +166,7 @@
 				00F38D151EB6CC5000BFD38D /* Sources */,
 				00F38D161EB6CC5000BFD38D /* Frameworks */,
 				00F38D171EB6CC5000BFD38D /* Resources */,
+				00F38D6C1EB6F66A00BFD38D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +226,11 @@
 					00F38D181EB6CC5000BFD38D = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					00F38D2C1EB6CC5000BFD38D = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -259,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F38D741EB6FEEC00BFD38D /* MapPin.swift in Sources */,
 				00F38D1F1EB6CC5000BFD38D /* ViewController.swift in Sources */,
 				00F38D1D1EB6CC5000BFD38D /* AppDelegate.swift in Sources */,
+				00F38D761EB7189400BFD38D /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +452,7 @@
 		00F38D421EB6CC5000BFD38D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mapkitSwift3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -425,6 +465,7 @@
 		00F38D431EB6CC5000BFD38D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mapkitSwift3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
